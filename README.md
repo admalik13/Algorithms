@@ -1,7 +1,7 @@
 # Algorithms
 Repository for Algorithms
 
-This contains following modules:
+This project contains algorithms following modules:
 
 1. Arrays
 2. String
