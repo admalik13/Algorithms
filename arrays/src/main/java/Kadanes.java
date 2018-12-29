@@ -41,15 +41,15 @@ public class Kadanes {
      * Function getMaximumSumOfContiguousSubArray implements
      * Kadane's Algorithm
      *
-     * @param array
-     * @return maximum sum of contiguous sub array
+     * @param array input array
+     * @return maximum sum for a contiguous sub array
      */
     private static int getMaximumSumOfContiguousSubArray(int array[]){
         int localMax = 0, globalMax = Integer.MIN_VALUE;
-        for(int index=0; index<array.length; index++){
-            localMax += array[index];
-            if(globalMax < localMax) globalMax = localMax;
-            if(localMax < 0) localMax = 0;
+        for (int arrayElement : array) {
+            localMax += arrayElement;
+            if (globalMax < localMax) globalMax = localMax;
+            if (localMax < 0) localMax = 0;
         }
         return globalMax;
     }
